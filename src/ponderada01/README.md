@@ -1,6 +1,6 @@
 # Criação de um Repositório no Docker Hub para o Container FastAPI
 
-Este guia irá explicar o processo de criação de um repositório no Docker Hub contendo o seu container de FastAPI com o servidor que exibe o seu currículo.
+Este guia irá explicar o processo de criação de um repositório no Docker Hub contendo o container de FastAPI com o servidor que exibe o meu currículo.
 
 ## Tecnologias Utilizadas
 
@@ -53,7 +53,7 @@ O Dockfile pode ser acessado nos arquivos desse repositório.
 2. Construção do Container: 
 Foi executado o seguinte comando para construir o seu container:
 
-    ```docker build -t nome-de-seu-container```
+    ```docker build -t curriculo-gab```
 
 ### Passo 2: Criar um Repositório no Docker Hub
 No Docker Hub foi criado um repositório pulico onde posteriormente foi armazenado nosso container. 
