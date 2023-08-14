@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins';
+            margin: 0;
+            padding: 0;
+            background-color: #f0f3f8;
+            /* Fundo padrão */
+        }
+
+        body.dark-mode {
+            background-color: #0B173B;
+            /* Fundo em modo escuro */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: inherit;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: #5F04B4;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        .navbar .dark-mode-switch {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .dark-mode-switch label {
+            margin-right: 10px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card.header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-info {
+            width: 70%;
+            padding-left: 20px;
+        }
+
+        .header-img {
+            width: 30%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172046/Full-Inversed.png" alt="Logo">
+        <div class="dark-mode-switch">
+            <label for="dark-mode-toggle" style="color:#f0f3f8">Modo Dark</label>
+            <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+        </div>
+    </div>
+    <div class="container">
+        <div class="card header">
+            <img class="header-img" src="https://media.licdn.com/dms/image/D4D03AQF2YywgzN-rDw/profile-displayphoto-shrink_400_400/0/1665767972968?e=1697673600&v=beta&t=F42JdBg-fp3vJMhukwVe4-_unNvU548QygO57vAqyQQ"
+                alt="Foto de Gabriela Rodrigues Matias">
+            <div class="header-info">
+                <h1>Gabriela Rodrigues Matias</h1>
+                <p>Product Owner em Tecnologia no Instituto Semear</p>
+                <p>São Paulo, Brasil</p>
+                <p>Email: gabriela.matias@isemear.org.br</p>
+                <p>LinkedIn: <a
+                        href="linkedin.com/in/gabriela-rodrigues-matias">linkedin.com/in/gabriela-rodrigues-matias</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section">
+                <h2>Idiomas</h2>
+                <p>Português - Nativo</p>
+                <p>Espanhol - Intermediário</p>
+                <p>Inglês - Intermediário</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section">
+                <h2>Formação Acadêmica</h2>
+                <p><strong>Inteli - Instituto de Tecnologia e Liderança</strong></p>
+                <p>Bacharelado, Engenharia de Computação · (Fevereiro de 2022 - Dezembro de 2025)</p>
+                <p><strong>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - IFSP</strong></p>
+                <p>Bacharelado, Engenharia Mecânica · (2019 - 2022)</p>
+                <p><strong>ETEC Guaracy Silveira</strong></p>
+                <p>Curso Técnico de Eletrônica · (2016 - 2018)</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section">
+                <h2>Experiência Profissional</h2>
+
+                <div class="section">
+                    <p><strong>Líder de Engenharia e Dados</strong></p>
+                    <p>Instituto Semear</p>
+                    <p>Período: Fevereiro 2022 - Fevereiro 2023 (1 ano)</p>
+                    <p>Descrição: Liderança na equipe de Engenharia e Dados no Instituto Semear.</p>
+                </div>
+
+                <div class="section">
+                    <p><strong>Analista Full Stack</strong></p>
+                    <p>Instituto Semear</p>
+                    <p>Período: Abril 2021 - Fevereiro 2022 (11 meses)</p>
+                    <p>Descrição: Atuando como Analista Full Stack no Instituto Semear.</p>
+                </div>
+
+                <div class="section">
+                    <p><strong>Civics Educação - CTO</strong></p>
+                    <p>Período: Fevereiro 2021 - Presente (2 anos 1 mês)</p>
+                    <p>Descrição: Atuando como CTO na Civics Educação.</p>
+                </div>
+
+                <div class="section">
+                    <p><strong>BTG Pactual - Estagiária de Férias | Cyber Security</strong></p>
+                    <p>Período: Julho 2022 - Agosto 2022 (2 meses)</p>
+                    <p>Descrição: Estágio de férias na área de Cyber Security no BTG Pactual.</p>
+                </div>
+
+                <div class="section">
+
+                    <p><strong>Itaú Unibanco - Estágio em Operações | Tecnologia e Dados</strong></p>
+                    <p>Período: Novembro 2021 - Fevereiro 2022 (4 meses)</p>
+                    <p>Descrição: Estágio em Operações na área de Tecnologia e Dados no Itaú Unibanco.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section">
+                <h2>Cursos Extracurriculares</h2>
+
+                <div class="section">
+                    <p><strong>Mastertech - Design Thinking e Metodologia Ágil, Introdução a HTML, CSS, JavaScript e
+                            Lógica
+                            de Programação, Web Design</strong></p>
+                    <p>Período: 2019 - 2019</p>
+                    <p>Descrição: Participação em cursos extracurriculares na Mastertech.</p>
+                </div>
+                <div class="section">
+                    <p><strong>Mastertech - Design Thinking e Metodologia Ágil, Introdução a HTML, CSS, JavaScript e
+                            Lógica
+                            de Programação, Web Design</strong></p>
+                    <p>Período: 2019 - 2019</p>
+                    <p>Descrição: Participação em cursos extracurriculares na Mastertech.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section">
+                <h2>Atividades Extracurriculares</h2>
+                <div class="section">
+                    <p><strong>Diretora de Serviços</strong></p>
+                    <p>Centro Acadêmico Enedina Marques - CAEM IFSP</p>
+                    <p>Período: Outubro 2019 - Dezembro 2021</p>
+                    <p>Descrição: Atuação como Diretora de Serviços no Centro Acadêmico.</p>
+                </div>
+
+                <div class="section">
+
+                    <p><strong>Diretora de Diversidade</strong></p>
+                    <p>Central Estudantil - Inteli</p>
+                    <p>Período: Março 2022 - Março 2023 (1 ano)</p>
+                    <p>Descrição: Atuação como Diretora de Diversidade na Central Estudantil.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Publicação</h2>
+                    <p><strong>"CONSTRUÇÃO DE UM SISTEMA VIBRATÓRIO PARA A PRODUÇÃO DE OSCILAÇÕES FORÇADAS"</strong></p>
+                    <p>REGRASP - Revista para Graduandos / IFSP-Câmpus São Paulo</p>
+                    <p>Data: 30 de março de 2021</p>
+                </div>
+
+                <div class="section">
+                    <h2>Bolsa de Viagem Educacional</h2>
+                    <p><strong>Next Travel: Next Generation of Lawyers - Imersão no Vale do Silício</strong></p>
+                    <p>Conexão com empresas, escritórios, faculdades e locais turísticos da Califórnia como: Stanford,
+                        Berkeley, Google, Tesla, Amyris, Wilson Sonsini Goodrich & Rosati, Foley & Lardner e ABInbev</p>
+                </div>
+
+                <div class="section">
+                    <h2>Bolsa de Viagem Educacional</h2>
+                    <p><strong>Brazil at Silicon Valley: Fundação Estudar</strong></p>
+                    <p>Conexão com empresas, escritórios, faculdades e locais turísticos da Califórnia</p>
+                </div>
+
+            </div>
+
+
+        </div>
+</body>
+
+</html>
