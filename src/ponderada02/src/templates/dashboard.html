@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/style.css') }}">
+</head>
+<body>
+    <div class="menuoptions"><div class="menucontent"><a href="postpublish">Publicar</a> | <a href="dashboard">Posts</a> | <a href="sign_out">Sair</a></div></div>
+    {% for post in posts %}
+    <div class="postbox">
+        <div class="posttitle">
+            {{ post.post_title }}
+        </div>
+        <div class="postcontent">
+            {{ post.post_text }}
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>

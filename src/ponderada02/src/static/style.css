@@ -1,0 +1,98 @@
+.loginpage {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    width: 20%;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.loginheader {
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
+
+.formclass {
+    line-height: 1.5;
+}
+
+.menuoptions {
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+.menucontent {
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+}
+
+.publishpost {
+    padding-top:    2rem;
+    text-align: center;
+}
+
+.publishheader {
+    font-size: xx-large;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.publishcontent {
+    padding: 10px;
+    font-size: large;
+    line-height: 1.5;
+
+}
+
+.postpublishtitle {
+    width: 50%;
+}
+
+.postpublishcontent {
+    width: 70%;
+    height: 5rem;
+}
+
+.postbox {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 30%;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.posttitle {
+    font-size: large;
+    border: none;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+}
+
+.postcontent {
+    text-align: justify;
+    padding: 10px;
+    font-size: medium;
+}
+
+.littletext {
+    text-align: right;
+    font-size: medium;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid grey;
+    border-radius: 10px;
+}
+
+input[type=password] {
+    border: none;
+    border-bottom: 2px solid grey;
+    border-radius: 10px;
+}

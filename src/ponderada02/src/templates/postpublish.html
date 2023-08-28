@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar Post</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/style.css') }}">
+</head>
+<body>
+    <div class="menuoptions">
+        <div class="menucontent">
+            <a href="postpublish">Publicar</a> | <a href="dashboard">Posts</a> | <a href="sign_out">Sair</a>
+        </div>
+    </div>
+        <div class="publishpost">
+            <div class="publishheader">
+                    Publicar Post
+                    <div class="publishcontent">
+                        <form method="POST" action="/add_post">
+                            Título do Post<br>
+                            <input type="text" class="postpublishtitle" id="post_title" name="post_title"><br>
+                            Conteúdo do Post<br>
+                            <input type="text" class="postpublishcontent" id="post_content" name="post_content"><br>
+                            <input type="submit" value="Enviar Post">
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--  Load CSS in Flask with html-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/style.css') }}">
+</head>
+<body>
+    <div class="loginpage">
+        <div class="loginheader">
+            Login
+        </div>
+        <form class="formclass" method="POST" action="/login_user">
+            Username<br>
+            <input type="text" id="username" name="username"><br>
+            Password<br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Entrar">
+        </form>
+        <div  class="littletext">
+            <a href="signup">Criar conta</a>
+        </div>
+    </div>
+
+</body>
+</html>
