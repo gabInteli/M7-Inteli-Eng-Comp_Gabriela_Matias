@@ -69,7 +69,7 @@ def login_user():
 
         except Exception as e:
                 return {
-                    "error": "Deu errado familia",
+                    "error": "Erro",
                     "message": str(e)
                 }, 500
     else:
