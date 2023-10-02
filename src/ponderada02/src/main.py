@@ -8,7 +8,6 @@ from functools import wraps
 from auth_middleware import token_required
 import jwt
 
-
 # create the app
 app = Flask(__name__)
 # configure the SQLite database, relative to the app instance folder

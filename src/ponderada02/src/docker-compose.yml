@@ -3,7 +3,7 @@ version: '0.1'
 services:
 
   application:
-    image: gabinteli/ponderada02:ponderada02
+    image: gabinteli/ponderada02
     network_mode: host
     restart: always
     expose:

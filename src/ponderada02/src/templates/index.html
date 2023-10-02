@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <!--  Load CSS in Flask with html-->
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <style>
+        body {
+            background-color: #E4E4E4;
+            font-family: 'Poppins', sans-serif;
+            color: #2C263D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            margin: 0;
+        }
+
+        .loginpage {
+            background-color: #ffffff;
+            width: 40%;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .loginheader {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FF4645;
+        }
+
+        .formclass {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #2C263D;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #2C263D;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .show-password-checkbox {
+            display: flex;
+            align-items: center;
+        }
+
+        .show-password-checkbox input {
+            margin-right: 0.5rem;
+        }
+
+        .login-button {
+            background-color: #FF4645;
+            color: #ffffff;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background-color: #FF5B59;
+        }
+
+        .littletext {
+            text-align: center;
+            color: #2C263D;
+        }
+
+        .littletext a {
+            color: #FF4645;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .littletext a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div class="loginpage">
@@ -14,15 +99,17 @@
         </div>
         <form class="formclass" method="POST" action="/login_user">
             Username<br>
-            <input type="text" id="username" name="username"><br>
+            <input type="text" id="username" name="username" class="form-input"><br>
             Password<br>
-            <input type="password" id="password" name="password"><br>
-            <input type="submit" value="Entrar">
+            <div class="show-password-checkbox">
+                <input type="password" id="password" name="password" class="form-input">
+                <label for="show-password"><input type="checkbox" id="show-password"> Mostrar Senha</label>
+            </div>
+            <input type="submit" value="Entrar" class="login-button">
         </form>
         <div  class="littletext">
             <a href="signup">Criar conta</a>
         </div>
     </div>
-
 </body>
 </html>
